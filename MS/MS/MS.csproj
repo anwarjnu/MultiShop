@@ -378,6 +378,7 @@
     <Content Include="Pages\Security\UserDetails.aspx.exclude" />
     <Content Include="Resources\master.cer" />
     <Content Include="Web.config" />
+    <Content Include="dbFile\multishop.bak" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
