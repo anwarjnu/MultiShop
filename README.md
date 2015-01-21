@@ -1,2 +1,4 @@
 # MultiShop
-MultiShop, An online market place
+
+CWC-2015-web
+Dept. of CSE, Jagannath Univeristy
