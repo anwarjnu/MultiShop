@@ -1,4 +1,4 @@
 # MultiShop
 
-CWC-2015-web
-Dept. of CSE, Jagannath Univeristy
+#CWC-2015-web
+#Dept. of CSE, Jagannath Univeristy
