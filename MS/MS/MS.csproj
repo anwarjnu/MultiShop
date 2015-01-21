@@ -356,6 +356,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="abc.html" />
     <Content Include="App_LocalResources\MasterPage.master.resx" />
   </ItemGroup>
   <ItemGroup>
