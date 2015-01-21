@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/AnnonymousDummy.aspx" title="Home" description=""  keywords="" >
+    <siteMapNode url="~/Pages/ContactUs.aspx" title="Shirt"  description="Shirt" keywords="Shirt" PageHeader="Shirt" />
+    <siteMapNode url="#" title="Polo Shirt"  description="Polo Shirt" keywords="Polo Shirt" PageHeader="Polo Shirt" />
+    <siteMapNode url="##" title="Women Collection"  description="Women Collection" keywords="Women Collection" PageHeader="Women Collection" />
+    <siteMapNode url="###" title="Jewelerry"  description="Jewelerry" keywords="Jewelerry" PageHeader="About Us" />
+    <siteMapNode url="####" title="Computer Accessories"  description="Computer Accessories" keywords="Computer Accessories" PageHeader="Computer Accessories" />
+  </siteMapNode>
+</siteMap>

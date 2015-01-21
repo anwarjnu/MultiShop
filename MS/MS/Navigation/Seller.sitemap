@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/SellerDummy.aspx" title=""  description="" PageHeader="" keywords="">
+
+    <siteMapNode url="~/Pages/Admin/ContentSetup.aspx" title="Content Setup"  description="Content Setup"
+                keywords="Content Setup" PageHeader="Content Setup"/>
+    <siteMapNode url="~/Pages/UserManagement/ChangePassword.aspx" title="Change Password"  description="Change Password"
+            keywords="Product, Main Product" PageHeader="Product"/>
+    <siteMapNode url="~/Pages/Admin/ErrorLog.aspx/" title="Error Log"
+            PageHeader="Error Log"
+            description="Error Log"/>
+
+    <siteMapNode url="~/Pages/Admin/ClearErrorLog.aspx/" title="Clear Error Log"
+                 PageHeader="Clear Error Log"
+                 description="Clear Error Log"/>
+  </siteMapNode>
+</siteMap>

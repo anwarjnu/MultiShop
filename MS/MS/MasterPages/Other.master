@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="MasterPages_Other" Codebehind="Other.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Src="~/UserControls/MessagePanel.ascx" TagPrefix="VITL" TagName="MessagePanel" %>
+<%@ Register TagPrefix="WUC" TagName="Header" Src="~/UserControls/Header.ascx" %>
+<%@ Register TagPrefix="WUC" TagName="Footer" Src="~/UserControls/Footer.ascx" %>
+<%@ Register TagPrefix="WUC" TagName="MessagePanel" Src="~/UserControls/MessagePanel.ascx" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Post Free Ads</title>
+    <meta name="description" content="Using this page one can Browse Ads, Post Ads, See his/her Post Ads" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <table align="center">
+            <tr>
+                <td>
+                    <WUC:Header ID="header" runat="server" />
+                </td>
+            </tr>
+            <%--Main Content--%>
+            <tr>
+                <td class="wrapper">
+                    <table>
+                        <%-- MainContent--%>
+                        <tr>
+                            <td class="leftContent">
+                                <table width="970px">
+                                    <tr>
+                                        <td valign="top">
+                                            <asp:ContentPlaceHolder runat="server" ID="cpnhPageHeader">
+                                                <table>
+                                                    <tr>
+                                                        <td class="pagetitle" colspan="2">
+                                                            <asp:Literal ID="lit_PageHeader" runat="server" />
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <div id="Div1" class="hr1">
+                                                </div>
+                                            </asp:ContentPlaceHolder>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top">
+
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <WUC:MessagePanel ID="MessagePanel1" runat="server" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <asp:ContentPlaceHolder ID="Main" runat="server">
+                                                        </asp:ContentPlaceHolder>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="paddingTop"></td>
+            </tr>
+
+            <tr>
+                <td class="AdSpace">
+                    <img src="../App_Themes/Default/Images/adsp.png" alt="Adspace" runat="server" />
+                </td>
+            </tr>
+            <%-- Footer--%>
+            <tr>
+                <td class="paddingTop"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <WUC:Footer ID="Footer" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td class="paddingTop"></td>
+            </tr>
+
+            <tr>
+                <td class="CopyRight">&copy 2014 BDAL- All Right Reserved
+                </td>
+            </tr>
+            <tr>
+                <td class="paddingTop"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

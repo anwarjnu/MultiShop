@@ -1,0 +1,24 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600);
+body{
+    background: #ededed;
+    font-family: 'Open Sans', sans-serif;
+    font-family: font-awesome;
+
+}
+.container{
+    width:95%;
+    margin: 0 auto;
+}
+#navBg
+{
+    background: #ccc000;
+    
+}
+.mainArea{
+    margin-top: 6em;
+}
+.topLineNav
+{
+    margin-top: 
+}

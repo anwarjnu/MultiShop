@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode>
+    <siteMapNode url="~/DefaultDummy.aspx" title="" description=""  />
+    <siteMapNode siteMapFile="Navigation/Seller.sitemap"/>
+    <siteMapNode siteMapFile="Navigation/Buyer.sitemap"/>
+    <siteMapNode siteMapFile="Navigation/Others.sitemap"/>
+    <siteMapNode siteMapFile="Navigation/Annonymous.sitemap"/>
+  </siteMapNode>
+</siteMap>

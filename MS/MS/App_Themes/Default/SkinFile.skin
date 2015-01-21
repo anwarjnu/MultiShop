@@ -1,0 +1,59 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:Menu SkinID="SampleMenuHorizontal" runat="server" ForeColor="black"  Font-Names="Tahoma"  StaticBottomSeparatorImageUrl="images/MenuSeparator.png"
+                DynamicHorizontalOffset="0" DynamicVerticalOffset="0" CssClass="SampleMenu" Orientation="Vertical"
+                Width="100%" StaticEnableDefaultPopOutImage="False" StaticSubMenuIndent="16px">
+                <StaticMenuItemStyle ItemSpacing="0px" Height="40px" CssClass="StaticMenuItem" />
+                <StaticHoverStyle CssClass="StaticMenuHoverItem" />
+                <StaticSelectedStyle CssClass="StaticMenuHoverItem" />
+                <DynamicMenuStyle BorderWidth="2px" BorderStyle="solid" BorderColor="#FFFFFF" CssClass="DynamicMenuStyle" />
+                <DynamicMenuItemStyle CssClass="DynamicMenuItem" />
+                <DynamicHoverStyle CssClass="DynamicMenuHoverItem" />
+                <DynamicSelectedStyle CssClass="DynamicMenuHoverItem" />
+</asp:Menu>
+
+<asp:Image runat="server" SkinID="Header_Top_Banner" ImageUrl="~/App_Themes/Default/Images/11.gif" Width="1014px" Height="176px" AlternateText="BDAdList Free online advertising site in Bangladesh" />
+<asp:Image runat="server" SkinID="Logo" ImageUrl="~/App_Themes/Default/Images/Logo.gif" AlternateText="Logo of BDAdList Free Ads of Bangladdesh" />
+<asp:Image runat="server" SkinID="Vertical_Bar" ImageUrl="~/App_Themes/Default/Images/Vertical_Bar.gif" AlternateText="Vertical Bar of BDAdList Free Ads of Bangladdesh"/>
+
+<asp:Image runat="server" SkinID="Circle_Bullet" ImageUrl="~/App_Themes/Default/Images/Circle_Bullet.gif" AlternateText="Circle Indicator of BDAdList Free Ads of Bangladdesh" />
+<asp:Image runat="server" SkinID="Arrow" ImageUrl="~/App_Themes/Default/Images/Arrow.gif" AlternateText="Arrow of BDAdList Free Ads of Bangladdesh"/>
+
+<asp:ImageButton runat="server" SkinID="Login_Button" ImageUrl="~/App_Themes/Default/Images/LoginButton.gif" AlternateText="LoginButton of BDAdList Free Ads of Bangladdesh"/>
+
+<asp:TextBox runat="server" BorderStyle="Solid"  class="rounded" BorderWidth="1px" BorderColor="#939393" BackColor="#ffffff" width="400" height="120" SkinID="DescriptionTextArea" />
+<asp:ImageButton runat="server" SkinID="Search_Button" ImageUrl="~/App_Themes/Default/Images/SearchButton.gif" AlternateText="Search Button of BDAdList Free Ads of Bangladdesh"/>
+<asp:ImageButton runat="server" SkinID="Save_Changes" ImageUrl="~/App_Themes/Default/Images/SaveChanges.jpg" AlternateText="Search Button of BDAdList Free Ads of Bangladdesh"/>
+
+<asp:Image SkinID="MenuDivider" runat="server"   ImageUrl="~/App_Themes/Default/Images/MenuDivider.gif" AlternateText="&nbsp;"/>
+
+<asp:Button runat="server" SkinId="ButtonDummy"  BorderStyle="None" BackColor="Transparent"  />
+
+<asp:TreeView runat="server" SkinID="CategoryTree" NodeStyle-ImageUrl="~/App_Themes/Default/Images/Arrow_Bullet.gif" NodeStyle-HorizontalPadding="5px">
+<NodeStyle Font-Names="Tahoma" ForeColor="Black" />
+</asp:TreeView>
+<asp:GridView runat="server" AutoGenerateColumns="false" GridLines="Both"
+    CssClass="GridView" Width="100%" AllowPaging="true" CellPadding="4" CellSpacing="3">
+    <HeaderStyle CssClass="GridHeaderStyle" />
+    <RowStyle BackColor="#FFFFFF"></RowStyle>
+    <AlternatingRowStyle BackColor="#F8F8FF"></AlternatingRowStyle>
+ <PagerStyle CssClass="footerGV"  HorizontalAlign="Center" />
+            <FooterStyle BackColor="#a5a5a5" ForeColor="white" />
+</asp:GridView>
+
+<asp:Button runat="server" SkinID="Btn"  ForeColor="White" BorderColor="Red" BorderWidth="0" Font-Bold="true" CssClass="BtnStyle" />
+

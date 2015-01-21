@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"
+    Inherits="Admin_MasterPage" Codebehind="AdminMasterPage.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register TagPrefix="WUC" TagName="LeftMenu" Src="~/UserControls/LeftMenu.ascx" %>
+<%@ Register TagPrefix="WUC" TagName="Header" Src="~/UserControls/Header.ascx" %>
+<%@ Register TagPrefix="WUC" TagName="MessagePanel" Src="~/UserControls/MessagePanel.ascx" %>
+<%@ Register TagPrefix="WUC" TagName="Footer" Src="~/UserControls/Footer.ascx" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Multishopbd - Admin panel</title>
+    <meta name="Description" content="Admin Master Page using for Addmin to manage all user and their ads. Admin can also delete, cancel ads and user." />
+    <script src="//code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function ShowpImagePreview(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#ImgPrv').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form2" runat="server">
+        <asp:ScriptManager ID="ScriptManager2" runat="server" EnablePartialRendering="true" />
+        <table align="center" cellpadding="0" cellspacing="0" class="wrapper">
+            <tr>
+                <td colspan="3">
+                    <WUC:Header ID="Header1" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <asp:ContentPlaceHolder runat="server" ID="cpnhPageHeader">
+                        <table width="100%">
+                            <tr>
+                                <td class="pagetitle" colspan="2">
+                                    <h3>
+                                        <asp:Literal ID="lit_PageHeader" runat="server" />
+                                    </h3>
+                                </td>
+                            </tr>
+                        </table>
+                        <div id="Div1" class="hr1">
+                        </div>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <%--Main Content--%>
+            <tr>
+                <td valign="top" class="LeftMenu">
+                    <WUC:LeftMenu ID="LeftMenu1" runat="server" />
+                </td>
+                <td class="paddingLeft1"></td>
+                <td valign="top">
+                    <table>
+                        <tr>
+                            <td>
+                                <WUC:MessagePanel ID="MessagePanel1" runat="server" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tableBorder">
+                                <asp:ContentPlaceHolder ID="Main" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <WUC:Footer ID="Footer1" runat="server" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

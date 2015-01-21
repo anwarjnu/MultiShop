@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="MasterPage" Codebehind="MasterPage.master.cs" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register Src="~/UserControls/MessagePanel.ascx" TagPrefix="VITL" TagName="MessagePanel" %>
+<%@ Register TagPrefix="WUC" TagName="Header" Src="~/UserControls/Header.ascx" %>
+<%@ Register TagPrefix="WUC" TagName="Footer" Src="~/UserControls/Footer.ascx" %>
+<%@ Register TagPrefix="WUC" TagName="Menu" Src="~/UserControls/SideMenu.ascx" %>
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Multishop-Shop in Everymoment</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true" />
+        <table align="center" cellpadding="0" cellspacing="0" class="wrapper">
+            <tr>
+                <td colspan="3">
+                    <WUC:Header ID="Header1" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <hr />
+                </td>
+            </tr>
+            <%--Main Content--%>
+            <tr>
+                <td valign="top" class="LeftMenu">
+
+                    <WUC:Menu ID="Menu" runat="server" />
+
+
+                </td>
+
+
+                <td valign="top">
+                    <asp:ContentPlaceHolder ID="Main" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <WUC:Footer ID="Footer" runat="server" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

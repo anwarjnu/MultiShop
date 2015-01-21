@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/BuyerDummy.aspx" title=""  description="" PageHeader="" keywords="">
+    <siteMapNode url="~/Pages/Admin/AdminHome.aspx" title="Home"   keywords="Home" PageHeader="Home" />
+    <siteMapNode url="~/Pages/UserManagement/ChangePassword.aspx" title="Change Password"  description="Change Password"
+                 keywords="Admin, User, Add Admin, Add User,Change Password" PageHeader="Change Password" />
+  </siteMapNode>
+</siteMap>
