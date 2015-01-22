@@ -362,6 +362,20 @@
   <ItemGroup>
     <Content Include="App_Themes\Default\SkinFile.skin" />
     <Content Include="ImageHandler.ashx" />
+    <Content Include="Library\AjaxControlToolkit.dll" />
+    <Content Include="Library\aspnetforum.dll" />
+    <Content Include="Library\BasicFrame.WebControls.BasicDatePicker.dll" />
+    <Content Include="Library\Elmah.dll" />
+    <Content Include="Library\Microsoft.Practices.EnterpriseLibrary.Caching.dll" />
+    <Content Include="Library\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="Library\Microsoft.Practices.ObjectBuilder2.dll" />
+    <Content Include="Library\Microsoft.Practices.Unity.dll" />
+    <Content Include="Library\MS.dll" />
+    <Content Include="Library\MS.pdb" />
+    <Content Include="Library\MySql.Data.dll" />
+    <Content Include="Library\TVL.DataLogicLayer.dll" />
+    <Content Include="Library\VIT.ExceptionManager.dll" />
+    <Content Include="Library\VITLExtendedValidators.dll" />
     <Content Include="MasterPages\AdminMasterPage.master" />
     <Content Include="MasterPages\MasterPage.master" />
     <Content Include="MasterPages\Other.master" />
@@ -380,6 +394,7 @@
     <Content Include="Resources\master.cer" />
     <Content Include="Web.config" />
     <Content Include="dbFile\multishop.bak" />
+    <Content Include="Library\MS.dll.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
